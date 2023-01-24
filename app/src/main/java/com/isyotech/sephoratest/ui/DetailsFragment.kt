@@ -31,11 +31,11 @@ class DetailsFragment : Fragment() {
 
         binding = FragmentDetailsBinding.inflate(inflater, container, false)
 
-        viewModel.productObject.observe(viewLifecycleOwner, {
+        viewModel.productObject.observe(viewLifecycleOwner) {
             binding.title.text = it.product_name
             binding.desc.text = it.description
             Glide.with(this).load(it.imageUrl.small).into(binding.productImg)
-        })
+        }
 
         // Inflate the layout for this fragment
         return binding.root
