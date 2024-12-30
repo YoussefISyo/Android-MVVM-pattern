@@ -1,2 +1,2 @@
-# Sephora-test-app
-Simple android app for Sephora test
+# Android-MVVM-app
+Simple android app using the MVVM pattern
